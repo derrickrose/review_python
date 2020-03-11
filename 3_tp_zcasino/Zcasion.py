@@ -4,6 +4,7 @@
 
 from os import system
 from random import randrange
+from math import ceil
 
 
 def get_color(numero):
@@ -58,7 +59,7 @@ def calculate_benefit(played_money, bet_value, winning_number):
         return played_money*2 
     elif get_color(winning_number)==get_color(bet_value):
         print("Pas mal, on vous rembourse la moitié!!")
-        return -played_money/2
+        return -int(ceil(played_money/2))
     else:
         print("Désolé, vous perdez votre mise!!")
         return -played_money
