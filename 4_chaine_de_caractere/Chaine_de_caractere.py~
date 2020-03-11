@@ -1,7 +1,7 @@
 #!/usr/bin/python3.4
 # -*-coding:utf-8 -*
 
-test = input ("entrez un caractere ")
+test:str = input ("entrez un caractere ")
 print("test {0}".format(test))
 
 
