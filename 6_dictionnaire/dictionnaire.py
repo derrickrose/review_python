@@ -48,4 +48,7 @@ for  index, key in enumerate(echiquier.keys()):
 
 """ parcours des dictionnaires aveec .keys() .values() .items() """
 
+""" les dictionnaires peuvent récupérer les paramètres nommés dune fonction """
+
+
 
