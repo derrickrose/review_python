@@ -7,6 +7,7 @@ while annee==0:
     try:  # On essaye de convertir l'annee en entier
         annee = int(annee)
     except:
+        annee=0
         print("Erreur lors de la conversion de lannee.")
 
 if annee%400==0 or (annee%4==0 and annee%100!=0):
