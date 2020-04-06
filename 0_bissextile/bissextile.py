@@ -4,10 +4,10 @@ import os
 annee = 0
 while annee==0:
     annee=input("entrez une annee ")
-    try:  # On essaye de convertir l'année en entier
+    try:  # On essaye de convertir l'annee en entier
         annee = int(annee)
     except:
-        print("Erreur lors de la conversion de l'année.")
+        print("Erreur lors de la conversion de lannee.")
 
 if annee%400==0 or (annee%4==0 and annee%100!=0):
     print("annee bissextile",annee)
