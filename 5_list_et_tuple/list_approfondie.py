@@ -2,42 +2,61 @@
 # -*-coding:utf-8 -*
 
 """ method split """
-chaine = "hello word"
-liste = chaine.split(" ")
-print(liste)
+string = """je suis une chaine de caracteres"""
+tab = string.split(" ")
 
 """ join avec espace """
-liste = ['bonjour','mes', 'dames', 'et', 'monsieurs']
-chaine = " ".join(liste)
-print(chaine)
+string1 = " ".join(tab)
+print(tab)
+print(string1)
+
 
 """ redifinition de la methode print """
-def imprimer(*params, delimiteur=" ", fin="\n"):
-    chaine = ""
-    for elmt in params:
-        chaine+=(str(elmt)+delimiteur)
-    chaine.strip()
-    chaine+=fin
-    print(chaine)
+def printf(*liste,delimiteur=" ",fin= "\n"):
+    var = ""
+    for elmt in liste:
+        var += delimiteur + str(elmt)
+    var += fin
+    var = var.strip()
+    print(var)
+
+
+""" definition de methode main """
 
 if __name__ == '__main__':
-    valor = 10
-    value = 15
-    imprimer(valor,value)
-    
-    liste = [valor,value]
+    printf(1,1,2)
+   
     """ on peut aussi passer une liste comme parametres de fonction voyez la diff"""
-    print (liste)
-    print(*liste)
-    """ intervation directement dans la liste """
-    liste = [nb * 2 for nb in liste]
-    print(liste)
-    """ filtrer dans une liste """
-    liste.append(10)
-    liste.append(11)
-    liste.append(13)
-    print(liste)
-    liste = [nb for nb in liste if nb%2 == 0]
-    print(liste)
+    string = """je suis une chaine de caracteres"""
+    tab = string.split(" ")
+    print(string)
+    print(tab)
+    print(*tab)
 
+    """ intervation directement dans la liste """
+    """ filtrer dans une liste """
+    tab = [1,2,3]
+    tab = [nb*nb for nb in tab]
+
+    """trier une liste """
+    tab.sort(reverse=True)
+    print(tab)
+
+    """ filter une liste """
+    tab = [nb for nb in tab if nb%2 == 0]
+    print(tab)
+    
+    """trier une liste de tuple"""
+    table = []
+    table.append(('a',1))
+    table.append(('e',5))
+    table.append(('b',2))
+    table.append(('d',4))
+    table.append(('c',3))
+    table.sort(reverse=False)
+    print(table)
+    table = [(entier,char) for (char,entier) in table]
+    table.sort(reverse=True)
+    print(table)
+    
     

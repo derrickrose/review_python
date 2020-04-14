@@ -1,16 +1,15 @@
 #!/usr/bin/python3.4
 # -*-coding:utf-8 -*
 """module multipli contenant la fonction table"""
-
 import os
 
-def table(nb,max=10):
-    i = 0
-    while i < max:
-        print(nb," * ",i+1," = ",nb*(i+1))
-        i+=1
-      
-# test de la fonction table
+
+def multiplier(nb,max=10):
+    index = 1
+    while index<=max:
+        print(nb," * ", index," = ", nb*index)
+        index+=1
+
 if __name__ == "__main__":
-    table(4,12)
+    multiplier(2)
     os.system("pause")

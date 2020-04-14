@@ -1,43 +1,43 @@
 #!/usr/bin/python3.4
 # -*-coding:utf-8 -*
 
-my_list = list()
-my_list.append(5)
-list_2 = [1,2,3]
 
-"""acceder a un element de la liste """
-valor = list_2[0]
+""" declaration de liste"""
+liste = list()
+print(liste)
 
-print(my_list)
-print(list_2)
-print("le premier element de la liste est {}".format(list_2[0]))
 
-""" imprimer les elements de la liste"""
-ma_liste = [
-    4,
-    9,
-    0,
-    4, 5,  6]
+""" ajout elmn liste """
+liste.append(2)
+print(liste)
 
-print(len(ma_liste))
+""" declaration et initialisation liste """
+ma_liste = [1,2]
+print(ma_liste)
 
-print(""" parcour element dans la liste""")
+"""acceder a un element de liste """
+print(ma_liste[1])
 
+""" inserer une valeur a une liste """
+ma_liste.insert(0,0)
+print(ma_liste)
+
+""" parcourir une liste """
 for elmt in ma_liste:
-    print("element {}".format(elmt))
+    print(elmt)
 
-print(""" enlever element depuis une liste""")
-del ma_liste[1]
+""" parcourir une liste avec un enumartate """
+for elm in enumerate(ma_liste):
+    print(elm)
 
-for elmt in ma_liste:
-    print("element {}".format(elmt))
+for i,el in enumerate(ma_liste):
+    print("la valeur a la position {} est {}".format(i,el))
 
-print(""" enlever element depuis une liste avec remove""")
-ma_liste.remove(4)
+""" supprimer un element de la liste """
+del ma_liste[0]
+print(ma_liste)
 
-for elmt in ma_liste:
-    print("element {}".format(elmt))
+""" enlever une valeur das une liste """
+ma_liste.remove(2)
+print(ma_liste)
 
-print("""parcour lliste avec enumerate""")
-for index,elmt in enumerate(ma_liste):
-    print("la valeur en la position {} est {}".format(index,elmt))

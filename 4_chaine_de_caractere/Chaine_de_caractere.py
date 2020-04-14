@@ -39,3 +39,10 @@ print( \
 
 coupee = test[0:2]
 print ("couupe"+coupee)
+
+
+
+i=0
+while i<len(string):
+    print("str "+string[i])
+    i+=1
