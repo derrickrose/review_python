@@ -1,4 +1,4 @@
-#!/usr/bin/python3.4
+#!/usr/bin/python3
 # -*-coding:utf-8 -*
 """module multipli contenant la fonction table"""
 import os

@@ -1,6 +1,5 @@
-#!/usr/bin/python3.4
+#!/usr/bin/python3
 # -*-coding:utf-8 -*
-
 """ methode qui retourne un tuple composer de la valeur entiere
 et du reste de la division 
 """
